@@ -1,0 +1,135 @@
+/* =================================================================== */
+/* Styles Switcher
+====================================================================== */
+
+	#style-switcher h3 {
+		color:#fff;
+		font-size:12px;
+		margin: 5px 0 -3px 3px;
+		text-align: center;
+		background: #4f89aa;
+		border-radius: 20px;
+		
+	}
+	
+	#style-switcher {
+
+		background: #222;
+		width:260px;
+		position:fixed;
+		top:0px;
+		z-index:9999;
+		left:0px;
+		border-radius: 0 0 3px 0;  
+		//overflow-y:scroll
+	}
+	
+	#style-switcher div {
+		
+		padding:5px 10px;	
+		
+		//background:yellow;
+		
+		
+	}
+	h3{line-height:30px;//background:red;}
+	
+	#style-switcher h2 {			/*主题*/
+		background: #333;
+		color: #FFFFFF;
+		font-weight: bold;
+		padding: 0;
+		font-size: 14px;
+		padding: 6px 0 5px 10px;
+		text-align: center;
+	}
+	
+	#style-switcher h2 a {		/*switcher图标*/
+		background: url("../images/switcher.png") no-repeat scroll left center transparent;
+		display: block;
+		height: 41px;
+		position: absolute;
+		right: -39px;
+		text-indent: -9999px;
+		top: 100px;
+		width: 39px;
+		border-radius: 0 3px 3px 0;
+	}
+			
+	#trange{					/*透明度*/
+	-webkit-appearance: none;cursor: pointer;margin:0 10px;
+   	 background: linear-gradient(75deg,#fff8dc,orange);
+   	 border-radius: 5px;
+    	outline: none;
+		height: 10px;
+		width:200px;
+	}
+	#txtRangeValue{font-size:12px;font-weight:bold;width:200px;margin:0 10px;text-align: center;}
+
+	.colors { list-style:none; margin:10px 10px 10px 0px; overflow: hidden;overflow-y:scroll;
+				height:130px;
+	}
+	.colors li { float:left; margin:10px; }
+	.colors li a { display: block; width:50px; height:50px;/*颜色块大小*/ cursor: pointer; 
+					font-size: 15px;text-align: center;line-height: 50px;font-weight: bold;
+					color:#FFFFFF;
+	}
+
+
+	.layout-style select {
+		width: 100%;
+		padding: 5px;
+		border: none;
+		margin:5px 10px 0 -5px;
+		color: #666;
+		cursor: pointer;
+	}
+	
+	.butAry{float:left;margin: 5px  15px;
+		font-size: 15px;color:rgb(255, 255, 255);
+		width:90px;height:30px;
+		text-align: center;	
+		background: rgb(40, 204, 127);
+	}
+	/*
+	#uploadButton{background: rgba(131, 69, 201, 0.815);}
+	#reset{background: rgb(83, 92, 84);}
+	#reset1{background: teal;}
+	#reset2{background: skyblue;}
+	*/
+
+	.green, .green-bg { background: #72b626; }
+	.blue, .blue-bg { background: #2db2ea; }
+	.orange, .orange-bg {background: #fa5b0f; }
+	.navy, .navy-bg { background: #495d7f; }
+	.yellow, .yellow-bg { background: #ffb400; }
+	.peach, .peach-bg { background :#fcab55; }
+	.red, .red-bg { background: #c62020; }
+	.beige, .beige-bg { background: #bfa980; }
+	.pink, .pink-bg { background: #c71c77; }
+	.cyan, .cyan-bg { background: #37b6bd;}
+	.celadon, .celadon-bg { background: #74aea1;}
+	.brown, .brown-bg { background: #784e3d; }
+	.cherry, .cherry-bg { background: #911938;}
+	.gray, .gray-bg { background: #666666;}
+	.purple, .purple-bg { background: #6957af; }
+	.olive, .olive-bg { background: #b3c211; }
+	.dark, .dark-bg { background: #404040; }
+	.dirty-green, .dirty-green-bg { background: #3b6e40; }
+
+	.bg1 { background-image: url("../images/bg/uzi.jpg"); }
+	.bg2 { background-image: url("../images/bg/IMG_2383\ .JPG"); }
+	.bg3 { background-image: url("../images/bg/brushed_alu.png"); }
+	.bg13 { background-image: url("../images/bg/IMG_2384.jpg.png"); }
+	.bg4 { background-image: url("../images/bg/crisp_paper_ruffles.png"); }
+	.bg14 { background-image: url("../images/bg/tileable_wood_texture.png"); }
+	.bg7 { background-image: url("../images/bg/diamond_upholstery.png"); }
+	.bg8 { background-image: url("../images/bg/edg.jpg"); }
+	.bg9 { background-image: url("../images/bg/light_toast.png"); }	
+	.bg11 { background-image: url("../images/bg/purty_wood.png"); }
+
+	
+	#bg li a.active { box-shadow:0 0 0 3px #2db2ea inset }
+	#bgsolid li a.active { box-shadow:0 0 0 3px #ecf0f5 inset }
+	
+	

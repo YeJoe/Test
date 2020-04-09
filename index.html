@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<title id="title">你的笑靥</title>
+<!-- Mobile Specific
+================================================== -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/search.css">
+<link rel="stylesheet" type="text/css" href="css/switcher.css">
+<link rel="stylesheet" type="text/css" href="css/site.css">
+
+<link rel="stylesheet" type="text/css" href="css/boxed.css" id="layout">
+<link rel="stylesheet" type="text/css" href="css/colors/green.css" id="colors">
+<!-- Java Script
+================================================== -->
+<script src="js/jquery.js"></script>
+<style>
+*{margin:0;padding:0;}
+
+</style>
+
+<script src="js/switcher.js"></script>
+</head>
+<body >
+<div id="style-switcher">
+  <h2>主题<a href="#"></a></h2>
+  <div>
+    <h3>预定义的颜色</h3>
+    <ul  class="Trange">
+      <form>
+		  <div class="txt1">透明度:</div> <input type="range" id="trange" min="10" max="100" step="1" 
+			value="100"/>
+   		<div class="txt2">范围值:</div><input type="text" id="txtRangeValue" value="100"/>
+	    </form>	
+    </ul>
+    <h3>布局风格</h3>
+    <div class="layout-style">
+      <select id="layout-switcher">
+        <option value="css/boxed">Boxed</option>
+        <option value="css/wide">Wide</option>
+        <option  class="Sun" value="css/colors/Sun">太阳</option>
+        <option  class="night" value="css/colors/night">月亮</option>
+        <option  class="Eyes" value="css/colors/Eyes">护眼</option>
+      </select>
+    </div>
+    <h3>背景图片</h3>
+    <ul class="colors bg" id="bg">
+      <li><a href="#" class="bg1">青春</a></li>
+      <li><a href="#" class="bg8">Edg</a></li>
+      <li><a href="#" class="bg2">1</a></li>
+      <li><a href="#" class="bg3">2</a></li>
+      <li><a href="#" class="bg4">3</a></li>
+      <li><a href="#" class="bg7">4</a></li>
+      <li><a href="#" class="bg9">5</a></li>
+      <li><a href="#" class="bg11">6</a></li>
+
+   
+    </ul>
+   
+  
+    <h3>背景颜色</h3>
+    <ul class="colors bgsolid" id="bgsolid">
+      <li><a href="#" class="green-bg" title="Green">Green</a></li>
+      <li><a href="#" class="blue-bg" title="Blue">Blue</a></li>
+      <li><a href="#" class="orange-bg" title="Orange">Orange</a></li>
+      <li><a href="#" class="navy-bg" title="Navy">Navy</a></li>
+      <li><a href="#" class="yellow-bg" title="Yellow">Yellow</a></li>
+      <li><a href="#" class="peach-bg" title="Peach">Peach</a></li>
+      <li><a href="#" class="beige-bg" title="Beige">Beige</a></li>
+      <li><a href="#" class="purple-bg" title="Purple">Purple</a></li>
+      <li><a href="#" class="red-bg" title="Red">Red</a></li>
+      <li><a href="#" class="pink-bg" title="Pink">Pink</a></li>
+      <li><a href="#" class="celadon-bg" title="Celadon">Cladon</a></li>
+      <li><a href="#" class="brown-bg" title="Brown">Brown</a></li>
+      <li><a href="#" class="cherry-bg" title="Cherry">Cherry</a></li>
+      <li><a href="#" class="gray-bg" title="Gray">Gray</a></li>
+      <li><a href="#" class="dark-bg" title="Dark">Dark</a></li>
+      <li><a href="#" class="cyan-bg" title="Cyan">Cyan</a></li>
+      <li><a href="#" class="olive-bg" title="Olive">Olive</a></li>
+      <li><a href="#" class="dirty-green-bg" title="Dirty Green">Dirty</a></li>
+    </ul>
+  </div>
+
+ <input class="butAry" type="button" id="reset" value="恢复默认"></input>
+ <input class="butAry" type="button" id="reset1" value="清除背景"></input>
+ <input class="butAry" type="button" id="reset2" value="清除颜色"></input>
+  <!--上传图片-->
+  <input class="butAry" type="button" id="uploadButton" value="Upload"  />
+  <input type='file' id='verborgen_file' />
+
+   <!--  end-->
+</div>
+</div>
+<script language="javascript" type="text/javascript"> 
+
+
+
+ </script> 
+    <!--搜索框和书签-->
+   
+<div class="scposition"> <div class="logo" ><a href="#"><img src="img/Google001.jpg"></a></div>  
+<div class="search_bg">
+	<div class="sChoiceBtn" id="scbtn" title="切换搜索引擎" >
+						<img class="sChoiceBtnImg" id="sChoiceBtnImg" src="img/mj.svg">	</div>
+		<div class="scBigBox" id="bbox">
+			<div class="scSmallBox" id="mj"><img class="scImg" src="img/mj.svg"><span class="scName" >秘迹</span>			</div>
+			<div class="scSmallBox" id="google"><img class="scImg" src="img/google.svg"><span class="scName">谷歌</span>			</div>
+			<div class="scSmallBox" id="sm"><img class="scImg" src="img/sm.svg"><span class="scName">神马</span>			</div>
+			<div class="scSmallBox" id="baidu"><img class="scImg" src="img/baidu.svg"><span class="scName">百度</span>			</div>
+			<div class="scSmallBox" id="sogou"><img class="scImg" src="img/sogou.svg"><span class="scName">搜狗</span>			</div>
+			<div class="scSmallBox" id="bing"><img class="scImg" src="img/bing.svg"><span class="scName">必应</span>			</div>
+			<div class="scSmallBox" id="github"><img class="scImg" src="img/github.svg"><span class="scName">Git  </span>			</div>
+			<div class="scSmallBox" id="yandex"><img class="scImg" src="img/yandex.svg"><span class="scName">Ydx</span>			</div>
+			
+			<div class="scSmallBox" id="cili"><img class="scImg" src="img/cili.svg"><span class="scName">磁力</span>			</div>
+			<div class="scSmallBox" id="yingshi"><img class="scImg" src="img/yingshi.svg"><span class="scName">影视</span>			</div>
+		</div>
+		<form action="https://mijisou.com/?q=" method="GET" id='searchCheck' target="_blank">
+		<input class="textb" type="text" value="" x-webkit-speech="" lang="zh-CN" placeholder="✎...  偷得浮生半日闲～" name="q" id='search' autocomplete="off">
+			<button type="submit" value="" class="subb" id='btn'> <img src="img/fadajing.svg"> </button>
+	</form>
+
+  <div class="clear"> <img src="img/clear.svg"> </div>
+	<div class="suggest">
+		<ul id="search-result">
+		</ul>
+	</div>
+</div>
+</div>
+
+<script src="js/search.js"></script>
+<script src="js/suggest.js"></script>
+    <!--搜索框 end-->
+
+  
+   <!--书签-->
+
+<div id='siteCon-title'>
+   <div class="tp"> </div>  
+   <div id="jinrishici-sentence">今日诗词 加载中... </div> 
+</div>
+
+<div id="siteCon">
+ <main class="globalMain">
+      <ul class="siteList">
+        <!-- <li>
+          <!-- !a标签是内联元素, 里面不能包含块级元素. a标签是个例外 --
+          <a href="https://www.acfun.cn">
+            <div class="site">
+              <div class="logo">A</div>
+              <div class="link">acfun.cn</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://bilibili.com">
+            <div class="site">
+              <div class="logo">
+                <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3335851201,737797255&fm=26&gp=0.jpg" alt="">
+              </div>
+              <div class="link">bilibili.com</div>
+            </div>
+          </a>
+        </li> -->
+        <li>
+            <div class="site">
+              <div class="logo"></div>
+              <div class="link"></div>
+              <div class="close">
+                <svg class="icon">
+                  <use xlink:href="#i-close"></use>
+                </svg>
+              </div>
+            </div>
+    </li>
+        <li class="last">
+          <div class="addButton">
+            <div class="iconWrapper">
+              <svg class="icon" >
+                <use xlink:href="#i-add"></use>
+              </svg>
+            </div>
+            <div class="text">
+              新增网站
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    </div>
+    <script src="///at.alicdn.com/t/font_808628_blycjmjm8g4.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+ <!--书签 end-->
+
+ <!--一言-->
+<p id="hitokoto">:D 获取中...</p>
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+<!--一言  end-->
+
+
+<!--
+作者:YeJoe
+主页：
+github：
+日期：2020-4-7
+版权所有，请勿删除
+❶❷❸❹❺❻❼❽❾❿
+-->
+</body>
+</html>
+
+ <script>
+//找到按钮  $()找， 找到后点击
+  $("#siteCon-title").click(function(){		//点击执行的事件
+  $("#siteCon").slideToggle();//显示		
+  });
+</script>
+<!--今日诗词-->
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<!--title问候语-->
+<script type="text/javascript">
+  var d = new Date()
+  var time = d.getHours()
+  if (time < 24)
+  {
+  document.getElementById("title").innerHTML="Good evening";
+  }
+  if (time < 19) 
+  {
+  document.getElementById("title").innerHTML="Good afternoon";
+  }
+  if (time < 12) 
+  {
+  document.getElementById("title").innerHTML="Good morning";
+  }
+  if (time < 5)
+  {
+  document.getElementById("title").innerHTML="Dalao hello";
+  }
+  </script>
