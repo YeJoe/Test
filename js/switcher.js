@@ -25,6 +25,7 @@ jQuery(document).ready(function($) {
 			$("#colors" ).attr("href", "css/colors/orange.css" );
 			return false;
 		});
+	
 		
 		$(".navy" ).click(function(){
 			$("#colors" ).attr("href", "css/colors/navy.css" );
@@ -250,3 +251,14 @@ jQuery(document).ready(function($) {
 			window.localStorage.removeItem('bgImg')
 		});
 		*/
+
+
+
+<!--
+作者:YeJoe
+主页：
+github：https://github.com/YeJoe/Mo-Maek/
+日期：2020-4-7
+版权所有，请勿删除
+❶❷❸❹❺❻❼❽❾❿
+-->
