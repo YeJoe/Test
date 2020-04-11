@@ -12,7 +12,8 @@
 
 本项目通过localStorage实现换肤、透明度、夜间、护眼模式、自定义书签、多引擎搜索功能。
             css样式勉强适配移动端，能力有限，后续有时间会多加学习，完善。
-特别感谢：
+            
+#### 特别感谢
         https://wanmaoor.github.io/SiteNavigator/
 
 
